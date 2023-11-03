@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Vite App</title>
+  </head>
+  <body>
+  <h1>2023 Top Domestic Movies</h1>
+  <section>
+    
+<form aria-label="">
+  <h2>Add your movie</h2>
+  <label for="title">Movie Title: 
+   <input type="text" required>
+   </label>
+
+      <label for="scores">Critic Score:
+      <input type="number" required>
+      </label>
+
+      <label for="scores">Audience Score:
+      <input type="number" required>
+      </label>
+
+      <label for="sales">Domestic Gross Sales:
+      <input type="number" required>
+      </label>
+
+  <label for="genre">Genre:
+    <select name="genre" id="genre" required >
+     <option value="">--Select a Genre--</option>
+
+     <option value="action">action</option>
+
+     <option value="adventure">adventure</option>
+
+     <option value="comedy">comedy</option>
+
+     <option value="drama">drama</option>
+
+     <option value="horror">horror</option>
+
+     <option value="concert">concert</option>
+
+     <option value="documentary">documentary</option>
+
+     <option value="musical">musical</option>
+
+     <option value="romance">romance</option>
+
+     <option value="sci-fi">Sci-Fi</option>
+
+     <option value="thriller">thriller</option>
+  </select>
+   </label>
+
+      <button type="submit">Add Movie</button>
+      </form>
+
+     <div class="denote-movies-container" >
+    <ul id="Movie-container"></ul>
+    <button id="delete-Added-Movies">Go Back To Default Movies</button>
+  </div>
+
+  </section>
+
+  <canvas id="barChart"></canvas>
+  <canvas id="donutChart"></canvas>
+  <canvas id="ScatterplotsChart"></canvas>
+
+
+        
+    
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  </body>
+</html>
